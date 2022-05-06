@@ -10,7 +10,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "@typescript-eslint/eslint-plugin": "^5.22.0"
+  },
+  "dependencies": {
     "@typescript-eslint/parser": "^5.22.0"
   },
   "scripts": {
@@ -18,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/polyfill-hq/eslint-config-polyfill.git"
+    "url": "git+https://github.com/polyfill-hq/eslint-config.git"
   },
   "keywords": [
     "eslint",
@@ -27,7 +30,10 @@
   "author": "polyfill hq",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/polyfill-hq/eslint-config-polyfill/issues"
+    "url": "https://github.com/polyfill-hq/eslint-config/issues"
   },
-  "homepage": "https://github.com/polyfill-hq/eslint-config-polyfill#readme"
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "homepage": "https://github.com/polyfill-hq/eslint-config#readme"
 }

@@ -23,21 +23,21 @@ module.exports = {
 		es6: true,
 		mocha: true
 	},
-	overrides: [
-		{
-			files: ['*.ts', '*.tsx'],
-			extends: [
-				'.ts.eslintrc.js'
-			]
-		},
-		{
-			files: ['*.json'],
-			extends: [
-				'plugin:json/recommended-with-comments'
-			],
-			rules: { quotes: ['error', 'double', { avoidEscape: true }] }
-		}
-	],
+	// overrides: [
+	// 	{
+	// 		files: ['*.ts', '*.tsx'],
+	// 		extends: [
+	// 			'.ts.eslintrc.js'
+	// 		]
+	// 	},
+	// 	{
+	// 		files: ['*.json'],
+	// 		extends: [
+	// 			'plugin:json/recommended-with-comments'
+	// 		],
+	// 		rules: { quotes: ['error', 'double', { avoidEscape: true }] }
+	// 	}
+	// ],
 	reportUnusedDisableDirectives: true,
 	rules: {
 		'filenames/match-exported': 'off',
