@@ -6,17 +6,6 @@ module.exports = {
     warnOnUnsupportedTypeScriptVersion: false,
     project: `${process.env.PWD}/tsconfig.json`
   },
-  settings: {
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.tsx']
-    },
-    'import/resolver': {
-      typescript: {
-        alwaysTryTypes: true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-        project: 'tsconfig.json'
-      }
-    }
-  },
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
