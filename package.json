@@ -1,0 +1,23 @@
+{
+  "name": "@polyfillhq/eslint-config-default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polyfill-hq/eslint-config-polyfill.git"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "author": "polyfill hq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polyfill-hq/eslint-config-polyfill/issues"
+  },
+  "homepage": "https://github.com/polyfill-hq/eslint-config-polyfill#readme"
+}
