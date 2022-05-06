@@ -1,6 +1,6 @@
 {
-  "name": "@polyfillhq/eslint-config-default",
-  "version": "1.0.3",
+  "name": "@polyfillhq/eslint-config",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "peerDependencies": {
