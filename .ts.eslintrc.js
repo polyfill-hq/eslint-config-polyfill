@@ -28,6 +28,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-assertion': 'warn',
     '@typescript-eslint/no-use-before-define': 'off',
     "@typescript-eslint/no-shadow": ["warn"],
+    "@typescript-eslint/no-unused-vars": 'off',
     "@typescript-eslint/no-floating-promises": 'warn',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'warn',
