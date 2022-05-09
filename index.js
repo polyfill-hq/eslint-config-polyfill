@@ -10,8 +10,16 @@ module.exports = {
 		'plugin:import/recommended',
 	],
 	settings: {
-		'import/core-modules': ['jose/jwt/sign', 'jose/jwt/verify']
-	},
+		'import/parsers': {
+		  '@typescript-eslint/parser': ['.ts', '.tsx']
+		},
+		'import/resolver': {
+		  typescript: {
+			alwaysTryTypes: true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
+			project: 'tsconfig.json'
+		  }
+		}
+	  },
 	env: {
 		es6: true,
 		mocha: true
