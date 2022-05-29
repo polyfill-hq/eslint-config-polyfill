@@ -1,49 +1,13 @@
 module.exports = {
-	parserOptions: {
-		ecmaVersion: 2018,
-		sourceType: 'module',
-		ecmaFeatures: { modules: true }
-	},
-	plugins: ['import', 'autofix', 'json', 'simple-import-sort', 'filenames'],
 	extends: [
-		'eslint:recommended',
-		'plugin:import/recommended',
+		'eslint:recommended'
 	],
-	settings: {
-		'import/parsers': {
-		  '@typescript-eslint/parser': ['.ts', '.tsx']
-		},
-		'import/resolver': {
-		  typescript: {
-			alwaysTryTypes: true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-			project: 'tsconfig.json'
-		  }
-		}
-	  },
 	env: {
 		es6: true,
 		mocha: true
 	},
-	overrides: [
-		{
-			files: ['*.ts', '*.tsx'],
-			extends: [
-				'.ts.eslintrc.js'
-			]
-		},
-		{
-			files: ['*.json'],
-			extends: [
-				'plugin:json/recommended-with-comments'
-			],
-			rules: { quotes: ['error', 'double', { avoidEscape: true }] }
-		}
-	],
 	reportUnusedDisableDirectives: true,
 	rules: {
-		'filenames/match-exported': 'off',
-
-		// https://eslint.org/docs/rules/#possible-errors
 		'no-await-in-loop': 'off',
 		'no-extra-parens': ['warn', 'all', { nestedBinaryExpressions: false }],
 		'no-import-assign': 'error',
@@ -139,12 +103,6 @@ module.exports = {
 		'newline-per-chained-call': ['error', { ignoreChainWithDepth: 2 }],
 		// "space-before-function-paren":["warn","never"],`
 
-		// https://eslint.org/docs/rules/#ecmascript-6
-		'no-restricted-imports': ['error', { patterns: ['*/motto.*/*'] }],
-
-		'import/first': 'error',
-		'import/extensions': ['off', 'always', { js: 'never', ts: 'never' }],
-		'import/namespace': ['off'],
 		'sort-imports': [
 			'warn',
 			{
@@ -156,4 +114,3 @@ module.exports = {
 		]
 	}
 };
-  
