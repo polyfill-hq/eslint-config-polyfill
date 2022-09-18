@@ -31,6 +31,8 @@ module.exports = {
     'no-restricted-syntax': [
       'off',
     ],
+    'no-extra-parens': 'off',
+    '@typescript-eslint/no-extra-parens': 'warn',
     '@typescript-eslint/ban-ts-comment': 'warn',
     '@typescript-eslint/ban-types': 'warn',
     '@typescript-eslint/explicit-function-return-type': [
