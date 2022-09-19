@@ -28,11 +28,6 @@ module.exports = {
         default: 'array',
       },
     ],
-    'no-restricted-syntax': [
-      'off',
-    ],
-    'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': 'warn',
     '@typescript-eslint/ban-ts-comment': 'warn',
     '@typescript-eslint/ban-types': 'warn',
     '@typescript-eslint/explicit-function-return-type': [
@@ -44,6 +39,7 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'warn',
     ],
+    '@typescript-eslint/no-extra-parens': 'warn',
     '@typescript-eslint/no-floating-promises': [
       'error',
     ],
@@ -140,15 +136,7 @@ module.exports = {
     'no-await-in-loop': 'warn',
     'no-console': 'off',
     'no-continue': 'off',
-    'no-extra-parens': [
-      'warn',
-      'all',
-      {
-        enforceForArrowConditionals: false,
-        ignoreJSX: 'all',
-        nestedBinaryExpressions: false,
-      },
-    ],
+    'no-extra-parens': 'off',
     'no-import-assign': 'error',
     'no-multi-str': 'off',
     'no-nested-ternary': 'warn',
@@ -157,6 +145,9 @@ module.exports = {
       {
         props: false,
       },
+    ],
+    'no-restricted-syntax': [
+      'off',
     ],
     'no-underscore-dangle': 'off',
     'no-unused-vars': 'off',
