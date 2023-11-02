@@ -8,7 +8,6 @@ module.exports = {
   ],
 
   plugins: [
-    'filenames',
     'eslint-plugin-filename-export',
     'better-max-params',
   ],
