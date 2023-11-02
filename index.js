@@ -83,8 +83,6 @@ module.exports = {
         allowWholeFile: true,
       },
     ],
-    'filenames/match-exported': 'warn',
-    'filename-export/match-named-export': 'error',
     'filename-export/match-default-export': 'error',
     'id-length': [
       'warn',
