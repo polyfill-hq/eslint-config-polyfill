@@ -6,12 +6,15 @@ module.exports = {
     'airbnb-typescript/base',
     'plugin:eslint-comments/recommended',
   ],
+
+  plugins: [
+    'filenames',
+    'eslint-plugin-filename-export',
+    'better-max-params',
+  ],
   env: {
     jest: true,
   },
-  plugins: [
-    'filenames',
-  ],
   parserOptions: {
     project: './tsconfig.json',
   },
@@ -81,6 +84,8 @@ module.exports = {
       },
     ],
     'filenames/match-exported': 'warn',
+    'filename-export/match-named-export': 'error',
+    'filename-export/match-default-export': 'error',
     'id-length': [
       'warn',
       {
@@ -113,6 +118,13 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: [
+        'scripts/**',
+        'test*/**',
+        '*',
+      ],
+    }],
     'max-classes-per-file': 'off',
     'max-len': [
       'warn',
@@ -174,5 +186,11 @@ module.exports = {
       },
     ],
     'space-infix-ops': 'warn',
+
+    'better-max-params/better-max-params': ['error', {
+      func: 5,
+      constructor: 10,
+    }],
+    'jsx-quotes': ['error', 'prefer-single'],
   },
 };
