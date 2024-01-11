@@ -82,6 +82,7 @@ module.exports = {
         allowWholeFile: true,
       },
     ],
+
     'filename-export/match-default-export': 'error',
     'id-length': [
       'warn',
@@ -90,7 +91,7 @@ module.exports = {
         min: 1,
       },
     ],
-    'import/no-cycle': 'warn',
+    'import/no-cycle': 'off',
     'import/no-mutable-exports': 'warn',
     'import/no-unresolved': 'error',
     'import/order': [
@@ -142,12 +143,13 @@ module.exports = {
         ignoreChainWithDepth: 3,
       },
     ],
-    'no-await-in-loop': 'warn',
+    'no-await-in-loop': 'off',
     'no-console': 'off',
     'no-continue': 'off',
     'no-extra-parens': 'off',
     'no-import-assign': 'error',
     'no-multi-str': 'off',
+    'no-plusplus': 'off',
     'no-nested-ternary': 'warn',
     'no-param-reassign': [
       'warn',

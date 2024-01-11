@@ -1,6 +1,6 @@
 {
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true,
+        "source.fixAll.eslint": "explicit"
     },
     "editor.tabSize": 2,
     "eslint.alwaysShowStatus": true,
@@ -17,6 +17,7 @@
     "less.validate": false,
     "scss.validate": false,
     "cSpell.words": [
-        "airbnb"
+        "airbnb",
+        "polyfillhq"
     ],
 }
