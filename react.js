@@ -74,6 +74,6 @@ module.exports = {
     'react/require-default-props': [
       'off',
     ],
-    'react/jsx-one-expression-per-line': ['off'],
+    'react/jsx-one-expression-per-line': ['warn', { allow: 'non-jsx' }],
   },
 };
