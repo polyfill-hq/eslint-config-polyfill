@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     'eslint-plugin-filename-export',
     'better-max-params',
-    '@stylistic/ts',
+    '@stylistic',
   ],
   env: {
     jest: true,
@@ -41,7 +41,7 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'warn',
     ],
-    '@stylistic/ts/no-extra-parens': 'warn',
+    '@stylistic/no-extra-parens': 'warn',
     '@typescript-eslint/no-floating-promises': [
       'error',
     ],
