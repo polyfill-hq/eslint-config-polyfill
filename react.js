@@ -16,7 +16,7 @@ module.exports = {
   extends: [
     'airbnb',
     'airbnb/hooks',
-    'airbnb-typescript',
+    '@kesills/airbnb-typescript/base',
     'plugin:jsx-control-statements/recommended',
     './index.js',
   ],
